@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">XPermission</string>
+    <string name="location_permission_rational">请允许获取定位权限</string>
+    <string name="location_permission_reject">请前往设置页面打开定位权限</string>
+    <string name="phone_permission_rational">请允许获取电话权限</string>
+    <string name="phone_permission_reject">请前往设置页面打开电话权限</string>
+    <string name="storage_permission_rational">请允许获取存储权限</string>
+    <string name="storage_permission_reject">请前往设置页面打开存储权限</string>
+</resources>

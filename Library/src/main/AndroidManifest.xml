@@ -1,0 +1,7 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.tik.xpermission" >
+    <application>
+        <activity android:name="com.tik.xpermission.PermissionActivity"
+            android:theme="@style/Translucent"/>
+    </application>
+</manifest>

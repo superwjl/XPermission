@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+
+    <Button
+        android:id="@+id/location_permission"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="请求定位权限"
+        android:onClick="locationPermission"/>
+
+    <Button
+        android:id="@+id/storage_permission"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="请求读写权限"
+        android:onClick="storagePermission"/>
+
+</LinearLayout>
