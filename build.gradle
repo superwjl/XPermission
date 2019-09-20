@@ -19,6 +19,10 @@ allprojects {
         google()
         jcenter()
 
+        flatDir {
+            dirs '../app/libs'
+        }
+
     }
 }
 

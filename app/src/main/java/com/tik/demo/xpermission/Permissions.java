@@ -1,4 +1,4 @@
-package com.tik.xpermission;
+package com.tik.demo.xpermission;
 
 /**
  * @author tik
