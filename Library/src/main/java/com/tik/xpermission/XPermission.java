@@ -11,6 +11,7 @@ import android.support.v7.app.AlertDialog;
  * @author tik
  **/
 public class XPermission {
+    private static GlobalPermissionCallback globalPermissionCallback;
     private PermissionCallback callback;
     private String[] permissions;
     private Context context;
@@ -32,10 +33,18 @@ public class XPermission {
     }
 
     public void request() {
-        if (permissions == null || permissions.length == 0) {
+        if (permissions == null || permissions.length <= 0) {
             return;
         }
         PermissionActivity.starter(context, permissions, callback);
+    }
+
+    public static void initGlobalCallback(GlobalPermissionCallback callback) {
+        globalPermissionCallback = callback;
+    }
+
+    static GlobalPermissionCallback getGlobalPermissionCallback() {
+        return globalPermissionCallback;
     }
 
     public static void showRationaleDialog(Context context, String message) {
