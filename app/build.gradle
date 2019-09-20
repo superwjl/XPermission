@@ -3,7 +3,7 @@ apply plugin: 'com.android.application'
 android {
     compileSdkVersion rootProject.ext.android.compileSdkVersion
     defaultConfig {
-        applicationId "com.tik.xpermission"
+        applicationId "com.tik.demo.xpermission"
         minSdkVersion rootProject.ext.android.minSdkVersion
         targetSdkVersion rootProject.ext.android.targetSdkVersion
         versionCode rootProject.ext.android.versionCode
@@ -20,5 +20,6 @@ android {
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation "com.android.support:appcompat-v7:$supportV7_Ver"
-    implementation project(path: ':Library')
+//    implementation project(path: ':Library')
+    implementation(name: 'XPermission', ext:'aar')
 }

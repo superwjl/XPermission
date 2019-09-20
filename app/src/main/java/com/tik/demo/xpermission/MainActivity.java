@@ -1,10 +1,13 @@
-package com.tik.xpermission;
+package com.tik.demo.xpermission;
 
 import android.Manifest;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
+
+import com.tik.xpermission.PermissionCallback;
+import com.tik.xpermission.XPermission;
 
 public class MainActivity extends AppCompatActivity {
 
